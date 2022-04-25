@@ -5,8 +5,8 @@ const db = require("./app/models");
 const mongoose = require('mongoose');
 
 var corsOptions = {
-  //origin: "http://localhost:8081"
-  origin: "http://parisevents.s3-website.eu-west-3.amazonaws.com"
+  origin: "http://localhost:8081"
+  //origin: "http://parisevents.s3-website.eu-west-3.amazonaws.com"
 };
 
 app.use(cors(corsOptions));
