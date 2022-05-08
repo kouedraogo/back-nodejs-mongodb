@@ -47,6 +47,7 @@ mongoose.connect(mongoDbUrl, {useNewUrlParser: true, useUnifiedTopology: true, d
   .catch(() => console.log('Connexion à MongoDB échouée !'));
   
 require("./app/routes/event.routes")(app);
+require("./app/routes/scrapping.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
